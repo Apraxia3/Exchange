@@ -99,7 +99,7 @@ $uname = $_SESSION['username'];
         <input type="number" id="total" name="total" readonly>
 
         <div class="button-container">
-            <button id="pay-button" type="button" onclick="checkPin()">Pay</button>
+            <button id="pay-button" type="submit">Pay</button>
         </div>
     </form>
 
@@ -119,7 +119,7 @@ $uname = $_SESSION['username'];
             // Set the currency input value
             currencyInput.value = selectedCurrency;
         }
-        
+
         function calculateTotal() {
             var amount = parseFloat(document.getElementById('amount').value);
             var adminFee = parseFloat(document.getElementById('adminFee').value.replace('Rp. ', ''));
