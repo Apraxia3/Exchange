@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F5F5F5;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #00AB41;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: 'Montserrat';
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+    font-family: 'Montserrat';
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #fff;
+}
+
+.scrollable-content {
+    text-align: left;
+    display: flex;
+}
+
+.scrollable-content h1 {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 1.5;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+    font-size: 60px;
+    max-width: 50%;
+}
+
+.scrollable-content img {
+    margin-left: 10px; /* Adjust the margin as needed */
+    width: 761px;
+    height: 500px;
+    margin-top: 120px;
+}

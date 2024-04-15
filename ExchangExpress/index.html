@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="scrollable-content">
+        <h1>Welcome to ExchangExpress</h1>
+        <img src="images/cashbag.png" alt="Moneybag">
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" height="50" width="75">
+                <span>ExchangExpress</span>
+            </div>
+        </a>
+        <ul>
+            <li><a href="./login/register.html" class="button">Signup</a></li>
+            <li><a href="./login/login.html" class="button">Login</a></li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        document.getElementById("convert").addEventListener("click", function () {
+            // Scroll to the bottom of the page
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth' // Optional smooth scrolling behavior
+            });
+        });
+    </script>
+</body>
+
+</html>

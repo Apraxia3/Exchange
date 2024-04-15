@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Insert Receiver Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="../dashboard.php" class="logo">
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="Logo" height="50" width="75">
+                <span>ExchangExpress</span>
+            </div>
+        </a>
+        <h1>Insert a New Receiver</h1>
+    </header>
+
+    <main>
+        <form action="./inputReceiver.php" method="get" enctype="multipart/form-data">
+            <section>
+                <label for="bank-name">Bank Name:</label>
+                <input type="text" id="bank-name" name="bank-name" placeholder="Receiver's Bank Name"><br>
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="IDR">IDR</option>
+                </select><br>
+                <label for="receiver">Receiver Holder:</label>
+                <input type="text" id="receiver" name="receiver" placeholder="Receiver's Name"><br>
+                <label for="transfer-code">Transfer Code:</label>
+                <input type="text" id="transfer-code" name="transfer-code" placeholder="Receiver's Transfer Code"><br>
+            </section>
+    
+            <div class="button-container">
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </form>
+        <div class="button-container">
+            <a href="./receiver.php">
+                <button id="cancel-button">Cancel</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>
